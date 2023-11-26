@@ -1,8 +1,8 @@
 <html>
 	<meta name="propeller" content="71420a256ba73964ef324c6aefd54a16">
-	<header class="nav-top">
+	<head class="nav-top">
 	<span class="hamburger material-icons" id="ham">menu</span>
-</header>
+	</head>
 
 <nav class="nav-drill">
   <ul class="nav-items nav-level-1">
@@ -153,10 +153,12 @@
 </nav>
 
 
-
+<style>
 @import "https://fonts.googleapis.com/css?family=Fira+Sans:300,400";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+</style>    
 
+<style>
 $black: #252525;
 $white: #fff;
 $grey: #eaeaea;
@@ -169,7 +171,6 @@ $primary-color-tint-3: lighten($primary-color, 30%);
 $primary-color-tint-4: lighten($primary-color, 40%);
 $primary-color-tint-5: lighten($primary-color, 50%);
 $primary-font: "Fira Sans", Arial, sans-serif;
-
 $link-color: $primary-color;
 
 * {
@@ -224,7 +225,8 @@ a {
 		visibility: visible;
 	}
 }
-
+</style>
+    <script>
 // ---------------------------------------
 // important stuff starts here
 
@@ -242,7 +244,8 @@ $nav-level-background-color: $primary-color-tint-5;
 $nav-level3-background-color: $primary-color-tint-4;
 $nav-level4-background-color: $primary-color-tint-3;
 $nav-level5-background-color: $primary-color-tint-2;
-
+</script>
+    <style>
 .nav {
 	&-drill {
 		display: flex;
@@ -360,11 +363,9 @@ $nav-level5-background-color: $primary-color-tint-2;
 		}
 	}
 }
-
-
-
-
-
+</style>
+  
+<script>
 console.clear()
 
 const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'))
@@ -388,5 +389,5 @@ const ham = document.getElementById('ham')
 ham.addEventListener('click', function() {
 	document.body.classList.toggle('nav-is-toggled')
 })
-
+</script>
 </html>
